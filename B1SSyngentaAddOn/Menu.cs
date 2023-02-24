@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace PN_Syngenta
+namespace B1SSyngentaAddOn
 {
     class Menu
     {
@@ -59,20 +59,21 @@ namespace PN_Syngenta
         public void SBO_Application_MenuEvent(ref SAPbouiCOM.MenuEvent pVal, out bool BubbleEvent)
         {
             BubbleEvent = true;
-            /*
+            SAPbouiCOM.Form form = Application.SBO_Application.Forms.ActiveForm;
+
             try
             {
-                if (pVal.BeforeAction && pVal.MenuUID == "PN_Syngenta.Form1")
+                if (pVal.MenuUID == "6913" && (form.TypeEx == "50101" || form.TypeEx == "50102"))
                 {
-                    Form1 activeForm = new Form1();
-                    activeForm.Show();
+                    BubbleEvent = false;
+                    return;
                 }
             }
             catch (Exception ex)
             {
                 Application.SBO_Application.MessageBox(ex.ToString(), 1, "Ok", "", "");
             }
-            */
+            
         }
 
     }

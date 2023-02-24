@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Xml;
 
-namespace PN_Syngenta
+namespace B1SSyngentaAddOn
 {
-    [FormAttribute("PN_Syngenta.Form1", "Form1.b1f")]
+    [FormAttribute("PN_Syngenta.Form1", "UIForms/UserForms/Form1.b1f")]
     class Form1 : UserFormBase
     {
         public Form1()
