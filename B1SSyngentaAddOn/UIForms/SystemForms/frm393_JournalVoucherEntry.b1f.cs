@@ -24,6 +24,7 @@ namespace B1SSyngentaAddOn.UIForms.SystemForms
         private SAPbouiCOM.ComboBox cmb_ecdType;
         private SAPbouiCOM.ComboBox cmb_indicator;
         private SAPbouiCOM.ComboBox cmb_transcode;
+        private SAPbouiCOM.ComboBox cmb_matriz;
 
         private SAPbouiCOM.CheckBox chk_cambio;
         private SAPbouiCOM.CheckBox chk_estorno;
@@ -55,11 +56,13 @@ namespace B1SSyngentaAddOn.UIForms.SystemForms
             this.cmb_transcode = this.GetSpecificItem<SAPbouiCOM.ComboBox>("9");
             this.cmb_series = this.GetSpecificItem<SAPbouiCOM.ComboBox>("137");
             this.cmb_indicator = this.GetSpecificItem<SAPbouiCOM.ComboBox>("93");
+            this.cmb_matriz = this.GetSpecificItem<SAPbouiCOM.ComboBox>("1320002034");
             this.chk_cambio = this.GetSpecificItem<SAPbouiCOM.CheckBox>("82");
             this.chk_estorno = this.GetSpecificItem<SAPbouiCOM.CheckBox>("99");
             this.chk_comp = this.GetSpecificItem<SAPbouiCOM.CheckBox>("95");
             this.btn_main = this.GetSpecificItem<SAPbouiCOM.Button>("1");
             this.mtx_Lines = this.GetSpecificItem<SAPbouiCOM.Matrix>("76");
+            
             this.OnCustomInitialize();
         }
 
@@ -114,6 +117,7 @@ namespace B1SSyngentaAddOn.UIForms.SystemForms
             edit_refTwo.Item.Enabled = false;
             edit_refThree.Item.Enabled = false;
             cmb_ecdType.Item.Enabled = false;
+            cmb_matriz.Item.Enabled = false;
             btn_main.Item.Enabled = false;
             mtx_Lines.Item.Enabled = false;
             chk_cambio.Item.Enabled = false;
