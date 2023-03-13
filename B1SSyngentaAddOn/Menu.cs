@@ -59,10 +59,11 @@ namespace B1SSyngentaAddOn
         public void SBO_Application_MenuEvent(ref SAPbouiCOM.MenuEvent pVal, out bool BubbleEvent)
         {
             BubbleEvent = true;
-            SAPbouiCOM.Form form = Application.SBO_Application.Forms.ActiveForm;
+            
 
             try
             {
+                SAPbouiCOM.Form form = Application.SBO_Application.Forms.ActiveForm;
                 if (pVal.MenuUID == "6913" && (form.TypeEx == "50101" || form.TypeEx == "50102"))
                 {
                     BubbleEvent = false;
@@ -71,7 +72,7 @@ namespace B1SSyngentaAddOn
             }
             catch (Exception ex)
             {
-                Application.SBO_Application.MessageBox(ex.ToString(), 1, "Ok", "", "");
+                //Application.SBO_Application.MessageBox(ex.ToString(), 1, "Ok", "", "");
             }
             
         }
