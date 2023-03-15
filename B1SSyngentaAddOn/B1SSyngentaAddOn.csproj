@@ -12,6 +12,7 @@
     <AssemblyName>B1SSyngentaAddOn</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -86,6 +87,12 @@
     <Reference Include="SAPBusinessOneSDK" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="UIForms\SystemForms\frm392_JournalEntry.b1f">
+      <FormCategory>SystemForm</FormCategory>
+    </None>
+    <None Include="UIForms\SystemForms\frm392_JournalEntry.b1f__orig_srf">
+      <DependentUpon>frm392_JournalEntry.b1f</DependentUpon>
+    </None>
     <None Include="UIForms\SystemForms\frm393_JournalVoucherEntry.b1f">
       <FormCategory>SystemForm</FormCategory>
     </None>
@@ -95,6 +102,9 @@
     <None Include="UIForms\UserForms\Form1.b1f">
       <FormCategory>UserForm</FormCategory>
     </None>
+    <Compile Include="UIForms\SystemForms\frm392_JournalEntry.b1f.cs">
+      <DependentUpon>frm392_JournalEntry.b1f</DependentUpon>
+    </Compile>
     <Compile Include="UIForms\SystemForms\frm393_JournalVoucherEntry.b1f.cs">
       <DependentUpon>frm393_JournalVoucherEntry.b1f</DependentUpon>
     </Compile>
