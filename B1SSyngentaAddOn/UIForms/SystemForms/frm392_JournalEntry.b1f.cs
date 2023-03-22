@@ -135,21 +135,141 @@ namespace B1SSyngentaAddOn.UIForms.SystemForms
 
         private void ChangeFormState(bool newState)
         {
-            edit_duedate.Item.Enabled = newState;
-            edit_memo.Item.Enabled = newState;
-            cmb_indicator.Item.Enabled = newState;
-            edit_project.Item.Enabled = newState;
-            cmb_transcode.Item.Enabled = newState;
-            edit_refOne.Item.Enabled = newState;
-            edit_refTwo.Item.Enabled = newState;
-            edit_refThree.Item.Enabled = newState;
-            cmb_ecdType.Item.Enabled = newState;
-            cmb_matriz.Item.Enabled = newState;
-            btn_main.Item.Enabled = newState;
-            mtx_Lines.Item.Enabled = newState;
-            chk_cambio.Item.Enabled = newState;
-            chk_estorno.Item.Enabled = newState;
-            chk_comp.Item.Enabled = newState;
+            try
+            {
+                edit_duedate.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
+            try
+            {
+                edit_memo.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
+            try
+            {
+                cmb_indicator.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
+            try
+            {
+                edit_project.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
+            try
+            {
+                cmb_transcode.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
+            try
+            {
+                edit_refOne.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
+            try
+            {
+                edit_refTwo.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
+            try
+            {
+                edit_refThree.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
+            try
+            {
+                cmb_ecdType.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
+            try
+            {
+                cmb_matriz.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
+            try
+            {
+                btn_main.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
+            try
+            {
+                mtx_Lines.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
+            try
+            {
+                chk_cambio.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
+            try
+            {
+                chk_estorno.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
+            try
+            {
+                chk_comp.Item.Enabled = newState;
+            }
+            catch (Exception)
+            {
+                // Tratamento de exceção
+            }
+
         }
     }
 }
